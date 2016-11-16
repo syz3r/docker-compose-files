@@ -2,7 +2,7 @@
 #
 
 mongo3:
-  image: mongo:3.0
+  image: mongo:3.4
   hostname: mongo3
   expose:
     - "27017"
@@ -11,7 +11,7 @@ mongo3:
   entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
 
 mongo2:
-  image: mongo:3.0
+  image: mongo:3.4
   hostname: mongo2
   expose:
     - "27017"
@@ -20,7 +20,7 @@ mongo2:
   entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
 
 mongo1:
-  image: mongo:3.0
+  image: mongo:3.4
   hostname: mongo1
   expose:
     - "27017"
@@ -32,7 +32,7 @@ mongo1:
   entrypoint: [ "/usr/bin/mongod", "--replSet", "rs", "--rest", "--httpinterface" ]
 
 mongosetup:
-  image: mongo:3.0
+  image: mongo:3.4
   links:
     - mongo1:mongo1
     - mongo2:mongo2
