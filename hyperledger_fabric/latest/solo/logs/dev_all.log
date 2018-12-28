@@ -1,0 +1,589 @@
+Attaching to peer0.org2.example.com, peer0.org1.example.com, peer1.org1.example.com, peer1.org2.example.com, orderer0.example.com, fabric-cli
+[31morderer0.example.com      |[0m [34m2018-12-19 08:04:01.931 UTC [localconfig] completeInitialization -> INFO 001[0m Kafka.Version unset, setting to 0.10.2.0
+[31morderer0.example.com      |[0m [34m[002 12-19 08:04:02.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Orderer config values:
+[31morderer0.example.com      |[0m 	General.LedgerType = "file"
+[31morderer0.example.com      |[0m 	General.ListenAddress = "0.0.0.0"
+[31morderer0.example.com      |[0m 	General.ListenPort = 7050
+[31morderer0.example.com      |[0m 	General.TLS.Enabled = true
+[31morderer0.example.com      |[0m 	General.TLS.PrivateKey = "/var/hyperledger/orderer/tls/server.key"
+[31morderer0.example.com      |[0m 	General.TLS.Certificate = "/var/hyperledger/orderer/tls/server.crt"
+[31morderer0.example.com      |[0m 	General.TLS.RootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+[31morderer0.example.com      |[0m 	General.TLS.ClientAuthRequired = false
+[31morderer0.example.com      |[0m 	General.TLS.ClientRootCAs = []
+[31morderer0.example.com      |[0m 	General.Cluster.RootCAs = [/etc/hyperledger/fabric/tls/ca.crt]
+[31morderer0.example.com      |[0m 	General.Cluster.ClientCertificate = ""
+[31morderer0.example.com      |[0m 	General.Cluster.ClientPrivateKey = ""
+[31morderer0.example.com      |[0m 	General.Cluster.DialTimeout = 5s
+[31morderer0.example.com      |[0m 	General.Cluster.RPCTimeout = 7s
+[31morderer0.example.com      |[0m 	General.Keepalive.ServerMinInterval = 1m0s
+[31morderer0.example.com      |[0m 	General.Keepalive.ServerInterval = 2h0m0s
+[31morderer0.example.com      |[0m 	General.Keepalive.ServerTimeout = 20s
+[31morderer0.example.com      |[0m 	General.GenesisMethod = "file"
+[31morderer0.example.com      |[0m 	General.GenesisProfile = "SampleInsecureSolo"
+[31morderer0.example.com      |[0m 	General.SystemChannel = "test-system-channel-name"
+[31morderer0.example.com      |[0m 	General.GenesisFile = "/var/hyperledger/orderer/orderer.genesis.block"
+[31morderer0.example.com      |[0m 	General.Profile.Enabled = false
+[31morderer0.example.com      |[0m 	General.Profile.Address = "0.0.0.0:6060"
+[31morderer0.example.com      |[0m 	General.LogLevel = "INFO"
+[31morderer0.example.com      |[0m 	General.LogFormat = "%{color}[%{id:03x} %{time:01-02 15:04:05.00 MST}] [%{longpkg}] %{callpath} -> %{level:.4s}%{color:reset} %{message}"
+[31morderer0.example.com      |[0m 	General.LocalMSPDir = "/var/hyperledger/orderer/msp"
+[31morderer0.example.com      |[0m 	General.LocalMSPID = "OrdererMSP"
+[31morderer0.example.com      |[0m 	General.BCCSP.ProviderName = "SW"
+[31morderer0.example.com      |[0m 	General.BCCSP.SwOpts.SecLevel = 256
+[31morderer0.example.com      |[0m 	General.BCCSP.SwOpts.HashFamily = "SHA2"
+[31morderer0.example.com      |[0m 	General.BCCSP.SwOpts.Ephemeral = false
+[31morderer0.example.com      |[0m 	General.BCCSP.SwOpts.FileKeystore.KeyStorePath = "/var/hyperledger/orderer/msp/keystore"
+[31morderer0.example.com      |[0m 	General.BCCSP.SwOpts.DummyKeystore =
+[31morderer0.example.com      |[0m 	General.BCCSP.PluginOpts =
+[31morderer0.example.com      |[0m 	General.Authentication.TimeWindow = 15m0s
+[31morderer0.example.com      |[0m 	FileLedger.Location = "/var/hyperledger/production/orderer"
+[31morderer0.example.com      |[0m 	FileLedger.Prefix = "hyperledger-fabric-ordererledger"
+[31morderer0.example.com      |[0m 	RAMLedger.HistorySize = 1000
+[31morderer0.example.com      |[0m 	Kafka.Retry.ShortInterval = 5s
+[31morderer0.example.com      |[0m 	Kafka.Retry.ShortTotal = 10m0s
+[31morderer0.example.com      |[0m 	Kafka.Retry.LongInterval = 5m0s
+[31morderer0.example.com      |[0m 	Kafka.Retry.LongTotal = 12h0m0s
+[31morderer0.example.com      |[0m 	Kafka.Retry.NetworkTimeouts.DialTimeout = 10s
+[31morderer0.example.com      |[0m 	Kafka.Retry.NetworkTimeouts.ReadTimeout = 10s
+[31morderer0.example.com      |[0m 	Kafka.Retry.NetworkTimeouts.WriteTimeout = 10s
+[31morderer0.example.com      |[0m 	Kafka.Retry.Metadata.RetryMax = 3
+[31morderer0.example.com      |[0m 	Kafka.Retry.Metadata.RetryBackoff = 250ms
+[31morderer0.example.com      |[0m 	Kafka.Retry.Producer.RetryMax = 3
+[31morderer0.example.com      |[0m 	Kafka.Retry.Producer.RetryBackoff = 100ms
+[31morderer0.example.com      |[0m 	Kafka.Retry.Consumer.RetryBackoff = 2s
+[31morderer0.example.com      |[0m 	Kafka.Verbose = false
+[31morderer0.example.com      |[0m 	Kafka.Version = 0.10.2.0
+[31morderer0.example.com      |[0m 	Kafka.TLS.Enabled = false
+[31morderer0.example.com      |[0m 	Kafka.TLS.PrivateKey = ""
+[31morderer0.example.com      |[0m 	Kafka.TLS.Certificate = ""
+[31morderer0.example.com      |[0m 	Kafka.TLS.RootCAs = []
+[31morderer0.example.com      |[0m 	Kafka.TLS.ClientAuthRequired = false
+[31morderer0.example.com      |[0m 	Kafka.TLS.ClientRootCAs = []
+[31morderer0.example.com      |[0m 	Kafka.SASLPlain.Enabled = false
+[31morderer0.example.com      |[0m 	Kafka.SASLPlain.User = ""
+[31morderer0.example.com      |[0m 	Kafka.SASLPlain.Password = ""
+[31morderer0.example.com      |[0m 	Kafka.Topic.ReplicationFactor = 3
+[31morderer0.example.com      |[0m 	Debug.BroadcastTraceDir = ""
+[31morderer0.example.com      |[0m 	Debug.DeliverTraceDir = ""
+[31morderer0.example.com      |[0m [34m[003 12-19 08:04:02.07 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting orderer with TLS enabled
+[31morderer0.example.com      |[0m [34m[004 12-19 08:04:02.09 UTC] [%{longpkg}] %{callpath} -> INFO[0m Getting block information from block storage
+[31morderer0.example.com      |[0m [34m[005 12-19 08:04:02.11 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting system channel 'testchainid' with genesis block hash 11eb25c13ca75dfd372258c750d5f8b4e7935b5cea9abbbf28bc7ed93851b4e3 and orderer type solo
+[31morderer0.example.com      |[0m [34m[006 12-19 08:04:02.11 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting orderer:
+[31morderer0.example.com      |[0m  Version: 1.4.0
+[31morderer0.example.com      |[0m  Commit SHA: development build
+[31morderer0.example.com      |[0m  Go version: go1.10.4
+[31morderer0.example.com      |[0m  OS/Arch: linux/amd64
+[31morderer0.example.com      |[0m [34m[007 12-19 08:04:02.11 UTC] [%{longpkg}] %{callpath} -> INFO[0m Beginning to serve requests
+[31morderer0.example.com      |[0m [34m[008 12-19 08:04:07.61 UTC] [%{longpkg}] %{callpath} -> INFO[0m Getting block information from block storage
+[31morderer0.example.com      |[0m [34m[009 12-19 08:04:07.62 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created and starting new chain businesschannel
+[31morderer0.example.com      |[0m [33m[00a 12-19 08:04:11.67 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59536: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[00b 12-19 08:04:11.68 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59538: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[00c 12-19 08:04:13.87 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59540: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[00d 12-19 08:04:13.87 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59542: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[00e 12-19 08:05:02.75 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59604: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[00f 12-19 08:05:46.54 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59622: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[010 12-19 08:05:49.85 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59636: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[011 12-19 08:05:58.37 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59686: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[012 12-19 08:05:58.67 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59688: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[013 12-19 08:05:58.85 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59690: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[014 12-19 08:05:59.20 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59692: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[015 12-19 08:05:59.45 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59694: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[016 12-19 08:05:59.71 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59696: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[017 12-19 08:05:59.93 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59698: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[018 12-19 08:06:00.24 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59700: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[019 12-19 08:06:00.47 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59702: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[01a 12-19 08:06:00.70 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59704: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[01b 12-19 08:06:00.91 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59706: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[01c 12-19 08:06:01.23 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59708: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[01d 12-19 08:06:09.79 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[31morderer0.example.com      |[0m [33m[01e 12-19 08:06:09.79 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[31morderer0.example.com      |[0m [33m[01f 12-19 08:06:09.81 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[31morderer0.example.com      |[0m [33m[020 12-19 08:06:09.81 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[31morderer0.example.com      |[0m [33m[021 12-19 08:06:09.81 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59712: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[022 12-19 08:06:09.82 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59710: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[023 12-19 08:06:12.02 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59734: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[024 12-19 08:06:12.18 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59736: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[025 12-19 08:06:12.71 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59740: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[026 12-19 08:06:13.01 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59742: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[027 12-19 08:06:13.18 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59744: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[028 12-19 08:06:13.40 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59746: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[029 12-19 08:06:13.64 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59748: rpc error: code = Canceled desc = context canceled
+[33mpeer0.org1.example.com    |[0m [34m[001 12-19 08:04:04.60 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer:
+[33mpeer0.org1.example.com    |[0m  Version: 1.4.0
+[33mpeer0.org1.example.com    |[0m  Commit SHA: development build
+[33mpeer0.org1.example.com    |[0m  Go version: go1.10.4
+[33mpeer0.org1.example.com    |[0m  OS/Arch: linux/amd64
+[33mpeer0.org1.example.com    |[0m  Chaincode:
+[33mpeer0.org1.example.com    |[0m   Base Image Version: 0.4.13
+[33mpeer0.org1.example.com    |[0m   Base Docker Namespace: hyperledger
+[33mpeer0.org1.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[33mpeer0.org1.example.com    |[0m   Docker Namespace: hyperledger
+[33mpeer0.org1.example.com    |[0m [34m[002 12-19 08:04:04.60 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger mgmt
+[33mpeer0.org1.example.com    |[0m [34m[003 12-19 08:04:04.60 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger provider
+[33mpeer0.org1.example.com    |[0m [34m[004 12-19 08:04:04.92 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger provider Initialized
+[33mpeer0.org1.example.com    |[0m [34m[005 12-19 08:04:04.95 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger mgmt initialized
+[33mpeer0.org1.example.com    |[0m [34m[006 12-19 08:04:04.95 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.6:7051
+[33mpeer0.org1.example.com    |[0m [34m[007 12-19 08:04:04.95 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer0.org1.example.com:7051
+[33mpeer0.org1.example.com    |[0m [34m[008 12-19 08:04:04.95 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.6:7051
+[33mpeer0.org1.example.com    |[0m [34m[009 12-19 08:04:04.95 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer0.org1.example.com:7051
+[33mpeer0.org1.example.com    |[0m [34m[00a 12-19 08:04:04.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with TLS enabled
+[33mpeer0.org1.example.com    |[0m [34m[00b 12-19 08:04:04.98 UTC] [%{longpkg}] %{callpath} -> INFO[0m Entering computeChaincodeEndpoint with peerHostname: peer0.org1.example.com
+[33mpeer0.org1.example.com    |[0m [34m[00c 12-19 08:04:04.98 UTC] [%{longpkg}] %{callpath} -> INFO[0m Exit with ccEndpoint: peer0.org1.example.com:7052
+[33mpeer0.org1.example.com    |[0m [34m[00d 12-19 08:04:04.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[33mpeer0.org1.example.com    |[0m [34m[00e 12-19 08:04:05.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[33mpeer0.org1.example.com    |[0m [34m[00f 12-19 08:04:05.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[33mpeer0.org1.example.com    |[0m [34m[010 12-19 08:04:05.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle(github.com/hyperledger/fabric/core/chaincode/lifecycle) registered
+[33mpeer0.org1.example.com    |[0m [34m[011 12-19 08:04:05.01 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initialize gossip with endpoint peer0.org1.example.com:7051 and bootstrap set [127.0.0.1:7051]
+[33mpeer0.org1.example.com    |[0m [34m[012 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating gossip service with self membership of {peer0.org1.example.com:7051 [] [9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217] peer0.org1.example.com:7051 <nil> <nil>}
+[33mpeer0.org1.example.com    |[0m [34m[013 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Gossip instance peer0.org1.example.com:7051 started
+[33mpeer0.org1.example.com    |[0m [34m[014 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[33mpeer0.org1.example.com    |[0m [34m[015 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[33mpeer0.org1.example.com    |[0m [34m[016 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[33mpeer0.org1.example.com    |[0m [34m[017 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[33mpeer0.org1.example.com    |[0m [34m[018 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[33mpeer0.org1.example.com    |[0m [34m[019 12-19 08:04:05.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[33mpeer0.org1.example.com    |[0m [34m[01a 12-19 08:04:05.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Deployed system chaincodes
+[33mpeer0.org1.example.com    |[0m [34m[01b 12-19 08:04:05.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[33mpeer0.org1.example.com    |[0m [34m[01c 12-19 08:04:05.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Discovery service activated
+[33mpeer0.org1.example.com    |[0m [34m[01d 12-19 08:04:05.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with ID=[name:"peer0.org1.example.com" ], network ID=[dev], address=[peer0.org1.example.com:7051]
+[33mpeer0.org1.example.com    |[0m [34m[01e 12-19 08:04:05.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Started peer with ID=[name:"peer0.org1.example.com" ], network ID=[dev], address=[peer0.org1.example.com:7051]
+[33mpeer0.org1.example.com    |[0m [34m[01f 12-19 08:04:08.41 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][c741eb2b] Entry chaincode: name:"cscc" 
+[33mpeer0.org1.example.com    |[0m [34m[020 12-19 08:04:08.41 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating ledger [businesschannel] with genesis block
+[33mpeer0.org1.example.com    |[0m [34m[021 12-19 08:04:08.42 UTC] [%{longpkg}] %{callpath} -> INFO[0m Getting block information from block storage
+[33mpeer0.org1.example.com    |[0m [34m[022 12-19 08:04:08.44 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [0] with 1 transaction(s) in 15ms (state_validation=1ms block_commit=8ms state_commit=4ms)
+[33mpeer0.org1.example.com    |[0m [34m[023 12-19 08:04:08.44 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created ledger [businesschannel] with genesis block
+[33mpeer0.org1.example.com    |[0m [34m[024 12-19 08:04:08.45 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[33mpeer0.org1.example.com    |[0m [34m[025 12-19 08:04:08.45 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[33mpeer0.org1.example.com    |[0m [34m[026 12-19 08:04:08.45 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org1MSP for channel businesschannel to learn about
+[33mpeer0.org1.example.com    |[0m [34m[027 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m Updating metadata information, current ledger sequence is at = 0, next expected block is = 1
+[33mpeer0.org1.example.com    |[0m [34m[028 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/businesschannel(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[33mpeer0.org1.example.com    |[0m [34m[029 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[33mpeer0.org1.example.com    |[0m [34m[02a 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/businesschannel(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[33mpeer0.org1.example.com    |[0m [34m[02b 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[33mpeer0.org1.example.com    |[0m [34m[02c 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/businesschannel(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[33mpeer0.org1.example.com    |[0m [34m[02d 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/businesschannel(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[33mpeer0.org1.example.com    |[0m [34m[02e 12-19 08:04:08.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][c741eb2b] Exit chaincode: name:"cscc"  (75ms)
+[33mpeer0.org1.example.com    |[0m [34m[02f 12-19 08:04:09.71 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][f340e4a8] Entry chaincode: name:"cscc" 
+[33mpeer0.org1.example.com    |[0m [34m[030 12-19 08:04:09.71 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][f340e4a8] Exit chaincode: name:"cscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[031 12-19 08:04:10.70 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][3bbd1024] Entry chaincode: name:"qscc" 
+[33mpeer0.org1.example.com    |[0m [34m[032 12-19 08:04:10.70 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][3bbd1024] Exit chaincode: name:"qscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[033 12-19 08:04:14.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m [9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217] : Becoming a leader
+[31morderer0.example.com      |[0m [33m[02a 12-19 08:06:13.85 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59750: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[02b 12-19 08:06:14.10 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59752: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[02c 12-19 08:06:14.32 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59754: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[02d 12-19 08:06:14.54 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59756: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[02e 12-19 08:06:14.76 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59758: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[02f 12-19 08:06:14.97 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59760: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[030 12-19 08:06:15.14 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59762: rpc error: code = Canceled desc = context canceled
+[31morderer0.example.com      |[0m [33m[031 12-19 08:06:15.35 UTC] [%{longpkg}] %{callpath} -> WARN[0m Error reading from 172.18.0.3:59764: rpc error: code = Canceled desc = context canceled
+[33mpeer0.org1.example.com    |[0m [34m[034 12-19 08:04:14.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m Elected as a leader, starting delivery service for channel businesschannel
+[33mpeer0.org1.example.com    |[0m [34m[035 12-19 08:04:14.49 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [1] from buffer
+[33mpeer0.org1.example.com    |[0m [34m[036 12-19 08:04:14.51 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[33mpeer0.org1.example.com    |[0m [34m[037 12-19 08:04:14.51 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[33mpeer0.org1.example.com    |[0m [34m[038 12-19 08:04:14.51 UTC] [%{longpkg}] %{callpath} -> INFO[0m Anchor peer with same endpoint, skipping connecting to myself
+[33mpeer0.org1.example.com    |[0m [34m[039 12-19 08:04:14.51 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[33mpeer0.org1.example.com    |[0m [34m[03a 12-19 08:04:14.53 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [1] in 38ms
+[33mpeer0.org1.example.com    |[0m [34m[03b 12-19 08:04:14.56 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [1] with 1 transaction(s) in 25ms (state_validation=1ms block_commit=15ms state_commit=7ms)
+[33mpeer0.org1.example.com    |[0m [34m[03c 12-19 08:04:14.56 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [2] from buffer
+[33mpeer0.org1.example.com    |[0m [34m[03d 12-19 08:04:14.57 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[33mpeer0.org1.example.com    |[0m [34m[03e 12-19 08:04:14.57 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[33mpeer0.org1.example.com    |[0m [34m[03f 12-19 08:04:14.57 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[33mpeer0.org1.example.com    |[0m [34m[040 12-19 08:04:14.57 UTC] [%{longpkg}] %{callpath} -> INFO[0m Anchor peer with same endpoint, skipping connecting to myself
+[33mpeer0.org1.example.com    |[0m [34m[041 12-19 08:04:14.58 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [2] in 25ms
+[33mpeer0.org1.example.com    |[0m [34m[042 12-19 08:04:14.61 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [2] with 1 transaction(s) in 25ms (state_validation=1ms block_commit=18ms state_commit=2ms)
+[33mpeer0.org1.example.com    |[0m [34m[043 12-19 08:04:18.79 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][d43c8044] Entry chaincode: name:"lscc" 
+[33mpeer0.org1.example.com    |[0m [34m[044 12-19 08:04:18.80 UTC] [%{longpkg}] %{callpath} -> INFO[0m Installed Chaincode [exp02] Version [1.0] to peer
+[33mpeer0.org1.example.com    |[0m [34m[045 12-19 08:04:18.80 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][d43c8044] Exit chaincode: name:"lscc"  (2ms)
+[33mpeer0.org1.example.com    |[0m [34m[046 12-19 08:04:21.64 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][28929422] Entry chaincode: name:"lscc" 
+[33mpeer0.org1.example.com    |[0m [34m[047 12-19 08:04:21.66 UTC] [%{longpkg}] %{callpath} -> INFO[0m building chaincode with ldflagsOpt: '-ldflags "-linkmode external -extldflags '-static'"'
+[33mpeer0.org1.example.com    |[0m [34m[048 12-19 08:05:02.74 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][28929422] Exit chaincode: name:"lscc"  (41173ms)
+[33mpeer0.org1.example.com    |[0m [34m[049 12-19 08:05:04.75 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [3] from buffer
+[33mpeer0.org1.example.com    |[0m [34m[04a 12-19 08:05:04.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [3] in 4ms
+[33mpeer0.org1.example.com    |[0m [34m[04b 12-19 08:05:04.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m Channel [businesschannel]: Handling LSCC state update for chaincode [exp02]
+[33mpeer0.org1.example.com    |[0m [34m[04c 12-19 08:05:04.78 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [3] with 1 transaction(s) in 21ms (state_validation=0ms block_commit=14ms state_commit=3ms)
+[33mpeer0.org1.example.com    |[0m [34m[04d 12-19 08:05:46.53 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][cec69b4f] Entry chaincode: name:"exp02" 
+[35mpeer1.org2.example.com    |[0m [34m[001 12-19 08:04:04.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer:
+[35mpeer1.org2.example.com    |[0m  Version: 1.4.0
+[35mpeer1.org2.example.com    |[0m  Commit SHA: development build
+[35mpeer1.org2.example.com    |[0m  Go version: go1.10.4
+[35mpeer1.org2.example.com    |[0m  OS/Arch: linux/amd64
+[35mpeer1.org2.example.com    |[0m  Chaincode:
+[35mpeer1.org2.example.com    |[0m   Base Image Version: 0.4.13
+[35mpeer1.org2.example.com    |[0m   Base Docker Namespace: hyperledger
+[35mpeer1.org2.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[35mpeer1.org2.example.com    |[0m   Docker Namespace: hyperledger
+[35mpeer1.org2.example.com    |[0m [34m[002 12-19 08:04:04.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger mgmt
+[35mpeer1.org2.example.com    |[0m [34m[003 12-19 08:04:04.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger provider
+[35mpeer1.org2.example.com    |[0m [34m[004 12-19 08:04:04.19 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger provider Initialized
+[35mpeer1.org2.example.com    |[0m [34m[005 12-19 08:04:04.20 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger mgmt initialized
+[35mpeer1.org2.example.com    |[0m [34m[006 12-19 08:04:04.21 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.4:7051
+[35mpeer1.org2.example.com    |[0m [34m[007 12-19 08:04:04.21 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer1.org2.example.com:7051
+[35mpeer1.org2.example.com    |[0m [34m[008 12-19 08:04:04.21 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.4:7051
+[35mpeer1.org2.example.com    |[0m [34m[009 12-19 08:04:04.21 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer1.org2.example.com:7051
+[35mpeer1.org2.example.com    |[0m [34m[00a 12-19 08:04:04.23 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with TLS enabled
+[35mpeer1.org2.example.com    |[0m [34m[00b 12-19 08:04:04.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m Entering computeChaincodeEndpoint with peerHostname: peer1.org2.example.com
+[35mpeer1.org2.example.com    |[0m [34m[00c 12-19 08:04:04.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m Exit with ccEndpoint: peer1.org2.example.com:7052
+[35mpeer1.org2.example.com    |[0m [34m[00d 12-19 08:04:04.26 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[35mpeer1.org2.example.com    |[0m [34m[00e 12-19 08:04:04.26 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[35mpeer1.org2.example.com    |[0m [34m[00f 12-19 08:04:04.26 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[35mpeer1.org2.example.com    |[0m [34m[010 12-19 08:04:04.26 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle(github.com/hyperledger/fabric/core/chaincode/lifecycle) registered
+[35mpeer1.org2.example.com    |[0m [34m[011 12-19 08:04:04.28 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initialize gossip with endpoint peer1.org2.example.com:7051 and bootstrap set [peer0.org2.example.com:7051]
+[35mpeer1.org2.example.com    |[0m [34m[012 12-19 08:04:04.29 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating gossip service with self membership of {peer1.org2.example.com:7051 [] [48 42 225 250 187 91 252 241 18 217 56 184 223 103 3 182 60 202 212 225 217 138 37 66 7 69 36 111 99 22 164 158] peer1.org2.example.com:7051 <nil> <nil>}
+[35mpeer1.org2.example.com    |[0m [34m[013 12-19 08:04:04.29 UTC] [%{longpkg}] %{callpath} -> INFO[0m Gossip instance peer1.org2.example.com:7051 started
+[35mpeer1.org2.example.com    |[0m [34m[014 12-19 08:04:04.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[35mpeer1.org2.example.com    |[0m [34m[015 12-19 08:04:04.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[35mpeer1.org2.example.com    |[0m [34m[016 12-19 08:04:04.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[35mpeer1.org2.example.com    |[0m [34m[017 12-19 08:04:04.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[35mpeer1.org2.example.com    |[0m [34m[018 12-19 08:04:04.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[35mpeer1.org2.example.com    |[0m [34m[019 12-19 08:04:04.32 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[35mpeer1.org2.example.com    |[0m [34m[01a 12-19 08:04:04.32 UTC] [%{longpkg}] %{callpath} -> INFO[0m Deployed system chaincodes
+[35mpeer1.org2.example.com    |[0m [34m[01b 12-19 08:04:04.33 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[35mpeer1.org2.example.com    |[0m [34m[01c 12-19 08:04:04.33 UTC] [%{longpkg}] %{callpath} -> INFO[0m Discovery service activated
+[35mpeer1.org2.example.com    |[0m [34m[01d 12-19 08:04:04.33 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with ID=[name:"peer1.org2.example.com" ], network ID=[dev], address=[peer1.org2.example.com:7051]
+[35mpeer1.org2.example.com    |[0m [34m[01e 12-19 08:04:04.33 UTC] [%{longpkg}] %{callpath} -> INFO[0m Started peer with ID=[name:"peer1.org2.example.com" ], network ID=[dev], address=[peer1.org2.example.com:7051]
+[35mpeer1.org2.example.com    |[0m [34m[01f 12-19 08:04:09.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][e53c8379] Entry chaincode: name:"cscc" 
+[35mpeer1.org2.example.com    |[0m [34m[020 12-19 08:04:09.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating ledger [businesschannel] with genesis block
+[35mpeer1.org2.example.com    |[0m [34m[021 12-19 08:04:09.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m Getting block information from block storage
+[35mpeer1.org2.example.com    |[0m [34m[022 12-19 08:04:09.19 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [0] with 1 transaction(s) in 13ms (state_validation=1ms block_commit=8ms state_commit=2ms)
+[35mpeer1.org2.example.com    |[0m [34m[023 12-19 08:04:09.19 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created ledger [businesschannel] with genesis block
+[35mpeer1.org2.example.com    |[0m [34m[024 12-19 08:04:09.20 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[35mpeer1.org2.example.com    |[0m [34m[025 12-19 08:04:09.20 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org1MSP for channel businesschannel to learn about
+[35mpeer1.org2.example.com    |[0m [34m[026 12-19 08:04:09.20 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[35mpeer1.org2.example.com    |[0m [34m[027 12-19 08:04:09.23 UTC] [%{longpkg}] %{callpath} -> INFO[0m Updating metadata information, current ledger sequence is at = 0, next expected block is = 1
+[35mpeer1.org2.example.com    |[0m [34m[028 12-19 08:04:09.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/businesschannel(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[35mpeer1.org2.example.com    |[0m [34m[029 12-19 08:04:09.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[35mpeer1.org2.example.com    |[0m [34m[02a 12-19 08:04:09.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/businesschannel(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[35mpeer1.org2.example.com    |[0m [34m[02b 12-19 08:04:09.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[35mpeer1.org2.example.com    |[0m [34m[02c 12-19 08:04:09.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/businesschannel(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[35mpeer1.org2.example.com    |[0m [34m[02d 12-19 08:04:09.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/businesschannel(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[35mpeer1.org2.example.com    |[0m [34m[02e 12-19 08:04:09.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][e53c8379] Exit chaincode: name:"cscc"  (76ms)
+[35mpeer1.org2.example.com    |[0m [34m[02f 12-19 08:04:10.23 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][11d0d61e] Entry chaincode: name:"cscc" 
+[35mpeer1.org2.example.com    |[0m [34m[030 12-19 08:04:10.23 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][11d0d61e] Exit chaincode: name:"cscc"  (1ms)
+[35mpeer1.org2.example.com    |[0m [34m[031 12-19 08:04:11.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][876f6ba1] Entry chaincode: name:"qscc" 
+[35mpeer1.org2.example.com    |[0m [34m[032 12-19 08:04:11.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][876f6ba1] Exit chaincode: name:"qscc"  (1ms)
+[35mpeer1.org2.example.com    |[0m [33m[033 12-19 08:04:14.84 UTC] [%{longpkg}] %{callpath} -> WARN[0m Message GossipMessage: tag:EMPTY alive_msg:<membership:<endpoint:"peer1.org1.example.com:7051" pki_id:"H \224\317+\3106~X\177j'?\013svD\313u[M[\357\265qcS\366s\354\275\020" > timestamp:<inc_num:1545206644819418900 seq_num:19 > > , Envelope: 83 bytes, Signature: 70 bytes isn't valid
+[35mpeer1.org2.example.com    |[0m [34m[034 12-19 08:04:15.01 UTC] [%{longpkg}] %{callpath} -> INFO[0m [48 42 225 250 187 91 252 241 18 217 56 184 223 103 3 182 60 202 212 225 217 138 37 66 7 69 36 111 99 22 164 158] : Some peer is already a leader
+[35mpeer1.org2.example.com    |[0m [34m[035 12-19 08:04:15.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [1] from buffer
+[35mpeer1.org2.example.com    |[0m [33m[036 12-19 08:04:15.04 UTC] [%{longpkg}] %{callpath} -> WARN[0m Message GossipMessage: tag:EMPTY alive_msg:<membership:<endpoint:"peer0.org1.example.com:7051" pki_id:"\t\237\023\313\342\333\r\006]\241\376\316\377\263\203;\335\243\343\354x\223\244\n7\266\013\320\265BE\331" > timestamp:<inc_num:1545206645017415700 seq_num:16 > > , Envelope: 83 bytes, Signature: 71 bytes isn't valid
+[35mpeer1.org2.example.com    |[0m [34m[037 12-19 08:04:15.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[35mpeer1.org2.example.com    |[0m [34m[038 12-19 08:04:15.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[35mpeer1.org2.example.com    |[0m [34m[039 12-19 08:04:15.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[35mpeer1.org2.example.com    |[0m [33m[03a 12-19 08:04:15.06 UTC] [%{longpkg}] %{callpath} -> WARN[0m Failed to update ordering service endpoints, due to Channel with businesschannel id was not found
+[35mpeer1.org2.example.com    |[0m [34m[03b 12-19 08:04:15.07 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [1] in 41ms
+[35mpeer1.org2.example.com    |[0m [34m[03c 12-19 08:04:15.10 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [1] with 1 transaction(s) in 21ms (state_validation=2ms block_commit=10ms state_commit=4ms)
+[35mpeer1.org2.example.com    |[0m [34m[03d 12-19 08:04:15.10 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [2] from buffer
+[35mpeer1.org2.example.com    |[0m [34m[03e 12-19 08:04:15.12 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[35mpeer1.org2.example.com    |[0m [34m[03f 12-19 08:04:15.12 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[35mpeer1.org2.example.com    |[0m [34m[040 12-19 08:04:15.12 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[35mpeer1.org2.example.com    |[0m [33m[041 12-19 08:04:15.14 UTC] [%{longpkg}] %{callpath} -> WARN[0m Failed to update ordering service endpoints, due to Channel with businesschannel id was not found
+[36mpeer0.org2.example.com    |[0m [34m[001 12-19 08:04:04.93 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer:
+[36mpeer0.org2.example.com    |[0m  Version: 1.4.0
+[36mpeer0.org2.example.com    |[0m  Commit SHA: development build
+[36mpeer0.org2.example.com    |[0m  Go version: go1.10.4
+[36mpeer0.org2.example.com    |[0m  OS/Arch: linux/amd64
+[36mpeer0.org2.example.com    |[0m  Chaincode:
+[36mpeer0.org2.example.com    |[0m   Base Image Version: 0.4.13
+[36mpeer0.org2.example.com    |[0m   Base Docker Namespace: hyperledger
+[36mpeer0.org2.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[36mpeer0.org2.example.com    |[0m   Docker Namespace: hyperledger
+[36mpeer0.org2.example.com    |[0m [34m[002 12-19 08:04:04.93 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger mgmt
+[36mpeer0.org2.example.com    |[0m [34m[003 12-19 08:04:04.93 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger provider
+[36mpeer0.org2.example.com    |[0m [34m[004 12-19 08:04:05.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger provider Initialized
+[36mpeer0.org2.example.com    |[0m [34m[005 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger mgmt initialized
+[36mpeer0.org2.example.com    |[0m [34m[006 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.7:7051
+[36mpeer0.org2.example.com    |[0m [34m[007 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer0.org2.example.com:7051
+[36mpeer0.org2.example.com    |[0m [34m[008 12-19 08:04:05.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.7:7051
+[36mpeer0.org2.example.com    |[0m [34m[009 12-19 08:04:05.03 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer0.org2.example.com:7051
+[36mpeer0.org2.example.com    |[0m [34m[00a 12-19 08:04:05.04 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with TLS enabled
+[36mpeer0.org2.example.com    |[0m [34m[00b 12-19 08:04:05.05 UTC] [%{longpkg}] %{callpath} -> INFO[0m Entering computeChaincodeEndpoint with peerHostname: peer0.org2.example.com
+[36mpeer0.org2.example.com    |[0m [34m[00c 12-19 08:04:05.05 UTC] [%{longpkg}] %{callpath} -> INFO[0m Exit with ccEndpoint: peer0.org2.example.com:7052
+[36mpeer0.org2.example.com    |[0m [34m[00d 12-19 08:04:05.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[36mpeer0.org2.example.com    |[0m [34m[00e 12-19 08:04:05.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[36mpeer0.org2.example.com    |[0m [34m[00f 12-19 08:04:05.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[36mpeer0.org2.example.com    |[0m [34m[010 12-19 08:04:05.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle(github.com/hyperledger/fabric/core/chaincode/lifecycle) registered
+[36mpeer0.org2.example.com    |[0m [34m[011 12-19 08:04:05.07 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initialize gossip with endpoint peer0.org2.example.com:7051 and bootstrap set [peer0.org2.example.com:7051]
+[36mpeer0.org2.example.com    |[0m [34m[012 12-19 08:04:05.07 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating gossip service with self membership of {peer0.org2.example.com:7051 [] [8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5] peer0.org2.example.com:7051 <nil> <nil>}
+[36mpeer0.org2.example.com    |[0m [34m[013 12-19 08:04:05.07 UTC] [%{longpkg}] %{callpath} -> INFO[0m Gossip instance peer0.org2.example.com:7051 started
+[36mpeer0.org2.example.com    |[0m [34m[014 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[36mpeer0.org2.example.com    |[0m [34m[015 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[36mpeer0.org2.example.com    |[0m [34m[016 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[36mpeer0.org2.example.com    |[0m [34m[017 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[36mpeer0.org2.example.com    |[0m [34m[018 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[36mpeer0.org2.example.com    |[0m [34m[019 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[36mpeer0.org2.example.com    |[0m [34m[01a 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m Deployed system chaincodes
+[36mpeer0.org2.example.com    |[0m [34m[01b 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[36mpeer0.org2.example.com    |[0m [34m[01c 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m Discovery service activated
+[36mpeer0.org2.example.com    |[0m [34m[01d 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with ID=[name:"peer0.org2.example.com" ], network ID=[dev], address=[peer0.org2.example.com:7051]
+[36mpeer0.org2.example.com    |[0m [34m[01e 12-19 08:04:05.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m Started peer with ID=[name:"peer0.org2.example.com" ], network ID=[dev], address=[peer0.org2.example.com:7051]
+[36mpeer0.org2.example.com    |[0m [34m[01f 12-19 08:04:08.93 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][e7b23461] Entry chaincode: name:"cscc" 
+[36mpeer0.org2.example.com    |[0m [34m[020 12-19 08:04:08.93 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating ledger [businesschannel] with genesis block
+[36mpeer0.org2.example.com    |[0m [34m[021 12-19 08:04:08.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m Getting block information from block storage
+[36mpeer0.org2.example.com    |[0m [34m[022 12-19 08:04:08.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [0] with 1 transaction(s) in 15ms (state_validation=1ms block_commit=8ms state_commit=3ms)
+[36mpeer0.org2.example.com    |[0m [34m[023 12-19 08:04:08.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created ledger [businesschannel] with genesis block
+[36mpeer0.org2.example.com    |[0m [34m[024 12-19 08:04:08.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[36mpeer0.org2.example.com    |[0m [34m[025 12-19 08:04:08.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org1MSP for channel businesschannel to learn about
+[36mpeer0.org2.example.com    |[0m [34m[026 12-19 08:04:08.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[36mpeer0.org2.example.com    |[0m [34m[027 12-19 08:04:08.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m Updating metadata information, current ledger sequence is at = 0, next expected block is = 1
+[36mpeer0.org2.example.com    |[0m [34m[028 12-19 08:04:08.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/businesschannel(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[36mpeer0.org2.example.com    |[0m [34m[029 12-19 08:04:08.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[36mpeer0.org2.example.com    |[0m [34m[02a 12-19 08:04:08.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/businesschannel(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[36mpeer0.org2.example.com    |[0m [34m[02b 12-19 08:04:08.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[36mpeer0.org2.example.com    |[0m [34m[02c 12-19 08:04:08.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/businesschannel(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[36mpeer0.org2.example.com    |[0m [34m[02d 12-19 08:04:08.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/businesschannel(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[36mpeer0.org2.example.com    |[0m [34m[02e 12-19 08:04:09.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][e7b23461] Exit chaincode: name:"cscc"  (66ms)
+[36mpeer0.org2.example.com    |[0m [34m[02f 12-19 08:04:10.05 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][477b461e] Entry chaincode: name:"cscc" 
+[36mpeer0.org2.example.com    |[0m [34m[030 12-19 08:04:10.05 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][477b461e] Exit chaincode: name:"cscc"  (1ms)
+[36mpeer0.org2.example.com    |[0m [34m[031 12-19 08:04:11.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][5be4a163] Entry chaincode: name:"qscc" 
+[36mpeer0.org2.example.com    |[0m [34m[032 12-19 08:04:11.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][5be4a163] Exit chaincode: name:"qscc"  (1ms)
+[36mpeer0.org2.example.com    |[0m [34m[033 12-19 08:04:15.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m [8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5] : Becoming a leader
+[36mpeer0.org2.example.com    |[0m [34m[034 12-19 08:04:15.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m Elected as a leader, starting delivery service for channel businesschannel
+[36mpeer0.org2.example.com    |[0m [34m[035 12-19 08:04:15.02 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [1] from buffer
+[36mpeer0.org2.example.com    |[0m [34m[036 12-19 08:04:15.05 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[36mpeer0.org2.example.com    |[0m [34m[037 12-19 08:04:15.05 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[36mpeer0.org2.example.com    |[0m [34m[038 12-19 08:04:15.05 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[36mpeer0.org2.example.com    |[0m [34m[039 12-19 08:04:15.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [1] in 58ms
+[36mpeer0.org2.example.com    |[0m [34m[03a 12-19 08:04:15.13 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [1] with 1 transaction(s) in 30ms (state_validation=0ms block_commit=24ms state_commit=2ms)
+[36mpeer0.org2.example.com    |[0m [34m[03b 12-19 08:04:15.13 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [2] from buffer
+[36mpeer0.org2.example.com    |[0m [34m[03c 12-19 08:04:15.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[36mpeer0.org2.example.com    |[0m [34m[03d 12-19 08:04:15.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[36mpeer0.org2.example.com    |[0m [34m[03e 12-19 08:04:15.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[36mpeer0.org2.example.com    |[0m [34m[03f 12-19 08:04:15.17 UTC] [%{longpkg}] %{callpath} -> INFO[0m Anchor peer with same endpoint, skipping connecting to myself
+[36mpeer0.org2.example.com    |[0m [34m[040 12-19 08:04:15.19 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [2] in 57ms
+[36mpeer0.org2.example.com    |[0m [34m[041 12-19 08:04:15.21 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [2] with 1 transaction(s) in 20ms (state_validation=0ms block_commit=14ms state_commit=2ms)
+[36mpeer0.org2.example.com    |[0m [33m[042 12-19 08:04:15.22 UTC] [%{longpkg}] %{callpath} -> WARN[0m peer0.org1.example.com:7051, PKIid:[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217] isn't responsive: EOF
+[36mpeer0.org2.example.com    |[0m [33m[043 12-19 08:04:15.22 UTC] [%{longpkg}] %{callpath} -> WARN[0m Entering [[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217]]
+[36mpeer0.org2.example.com    |[0m [33m[044 12-19 08:04:15.22 UTC] [%{longpkg}] %{callpath} -> WARN[0m Closing connection to Endpoint: peer0.org1.example.com:7051, InternalEndpoint: , PKI-ID: [9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217], Metadata: []
+[36mpeer0.org2.example.com    |[0m [33m[045 12-19 08:04:15.22 UTC] [%{longpkg}] %{callpath} -> WARN[0m Exiting
+[36mpeer0.org2.example.com    |[0m [34m[046 12-19 08:04:20.38 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][b6b1992b] Entry chaincode: name:"lscc" 
+[36mpeer0.org2.example.com    |[0m [34m[047 12-19 08:04:20.38 UTC] [%{longpkg}] %{callpath} -> INFO[0m Installed Chaincode [exp02] Version [1.0] to peer
+[36mpeer0.org2.example.com    |[0m [34m[048 12-19 08:04:20.38 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][b6b1992b] Exit chaincode: name:"lscc"  (2ms)
+[36mpeer0.org2.example.com    |[0m [34m[049 12-19 08:05:04.75 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [3] from buffer
+[32mpeer1.org1.example.com    |[0m [34m[001 12-19 08:04:04.42 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer:
+[32mpeer1.org1.example.com    |[0m  Version: 1.4.0
+[32mpeer1.org1.example.com    |[0m  Commit SHA: development build
+[32mpeer1.org1.example.com    |[0m  Go version: go1.10.4
+[32mpeer1.org1.example.com    |[0m  OS/Arch: linux/amd64
+[32mpeer1.org1.example.com    |[0m  Chaincode:
+[32mpeer1.org1.example.com    |[0m   Base Image Version: 0.4.13
+[32mpeer1.org1.example.com    |[0m   Base Docker Namespace: hyperledger
+[32mpeer1.org1.example.com    |[0m   Base Docker Label: org.hyperledger.fabric
+[32mpeer1.org1.example.com    |[0m   Docker Namespace: hyperledger
+[32mpeer1.org1.example.com    |[0m [34m[002 12-19 08:04:04.42 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger mgmt
+[32mpeer1.org1.example.com    |[0m [34m[003 12-19 08:04:04.42 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initializing ledger provider
+[32mpeer1.org1.example.com    |[0m [34m[004 12-19 08:04:04.62 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger provider Initialized
+[32mpeer1.org1.example.com    |[0m [34m[005 12-19 08:04:04.65 UTC] [%{longpkg}] %{callpath} -> INFO[0m ledger mgmt initialized
+[32mpeer1.org1.example.com    |[0m [34m[006 12-19 08:04:04.65 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.5:7051
+[32mpeer1.org1.example.com    |[0m [34m[007 12-19 08:04:04.65 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer1.org1.example.com:7051
+[32mpeer1.org1.example.com    |[0m [34m[008 12-19 08:04:04.65 UTC] [%{longpkg}] %{callpath} -> INFO[0m Auto-detected peer address: 172.18.0.5:7051
+[32mpeer1.org1.example.com    |[0m [34m[009 12-19 08:04:04.65 UTC] [%{longpkg}] %{callpath} -> INFO[0m Returning peer1.org1.example.com:7051
+[32mpeer1.org1.example.com    |[0m [34m[00a 12-19 08:04:04.68 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with TLS enabled
+[32mpeer1.org1.example.com    |[0m [34m[00b 12-19 08:04:04.70 UTC] [%{longpkg}] %{callpath} -> INFO[0m Entering computeChaincodeEndpoint with peerHostname: peer1.org1.example.com
+[32mpeer1.org1.example.com    |[0m [34m[00c 12-19 08:04:04.71 UTC] [%{longpkg}] %{callpath} -> INFO[0m Exit with ccEndpoint: peer1.org1.example.com:7052
+[32mpeer1.org1.example.com    |[0m [34m[00d 12-19 08:04:04.77 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc(github.com/hyperledger/fabric/core/scc/lscc) registered
+[32mpeer1.org1.example.com    |[0m [34m[00e 12-19 08:04:04.77 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+[32mpeer1.org1.example.com    |[0m [34m[00f 12-19 08:04:04.77 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc(github.com/hyperledger/fabric/core/scc/qscc) registered
+[32mpeer1.org1.example.com    |[0m [34m[010 12-19 08:04:04.77 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle(github.com/hyperledger/fabric/core/chaincode/lifecycle) registered
+[32mpeer1.org1.example.com    |[0m [34m[011 12-19 08:04:04.79 UTC] [%{longpkg}] %{callpath} -> INFO[0m Initialize gossip with endpoint peer1.org1.example.com:7051 and bootstrap set [peer0.org1.example.com:7051]
+[32mpeer1.org1.example.com    |[0m [34m[012 12-19 08:04:04.82 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating gossip service with self membership of {peer1.org1.example.com:7051 [] [72 32 148 207 43 200 54 126 88 127 106 39 63 11 115 118 68 203 117 91 77 91 239 181 113 99 83 246 115 236 189 16] peer1.org1.example.com:7051 <nil> <nil>}
+[32mpeer1.org1.example.com    |[0m [34m[013 12-19 08:04:04.82 UTC] [%{longpkg}] %{callpath} -> INFO[0m Gossip instance peer1.org1.example.com:7051 started
+[32mpeer1.org1.example.com    |[0m [34m[014 12-19 08:04:04.83 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[32mpeer1.org1.example.com    |[0m [34m[015 12-19 08:04:04.83 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[32mpeer1.org1.example.com    |[0m [34m[016 12-19 08:04:04.83 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[32mpeer1.org1.example.com    |[0m [34m[017 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[32mpeer1.org1.example.com    |[0m [34m[018 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[32mpeer1.org1.example.com    |[0m [34m[019 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[32mpeer1.org1.example.com    |[0m [34m[01a 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m Deployed system chaincodes
+[32mpeer1.org1.example.com    |[0m [34m[01b 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[32mpeer1.org1.example.com    |[0m [34m[01c 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m Discovery service activated
+[32mpeer1.org1.example.com    |[0m [34m[01d 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m Starting peer with ID=[name:"peer1.org1.example.com" ], network ID=[dev], address=[peer1.org1.example.com:7051]
+[32mpeer1.org1.example.com    |[0m [34m[01e 12-19 08:04:04.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m Started peer with ID=[name:"peer1.org1.example.com" ], network ID=[dev], address=[peer1.org1.example.com:7051]
+[32mpeer1.org1.example.com    |[0m [34m[01f 12-19 08:04:08.69 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][34f82fc9] Entry chaincode: name:"cscc" 
+[32mpeer1.org1.example.com    |[0m [34m[020 12-19 08:04:08.70 UTC] [%{longpkg}] %{callpath} -> INFO[0m Creating ledger [businesschannel] with genesis block
+[32mpeer1.org1.example.com    |[0m [34m[021 12-19 08:04:08.70 UTC] [%{longpkg}] %{callpath} -> INFO[0m Getting block information from block storage
+[32mpeer1.org1.example.com    |[0m [34m[022 12-19 08:04:08.73 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [0] with 1 transaction(s) in 19ms (state_validation=0ms block_commit=13ms state_commit=2ms)
+[32mpeer1.org1.example.com    |[0m [34m[023 12-19 08:04:08.73 UTC] [%{longpkg}] %{callpath} -> INFO[0m Created ledger [businesschannel] with genesis block
+[32mpeer1.org1.example.com    |[0m [34m[024 12-19 08:04:08.74 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[32mpeer1.org1.example.com    |[0m [34m[025 12-19 08:04:08.74 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org1MSP for channel businesschannel to learn about
+[32mpeer1.org1.example.com    |[0m [34m[026 12-19 08:04:08.74 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[32mpeer1.org1.example.com    |[0m [34m[027 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m Updating metadata information, current ledger sequence is at = 0, next expected block is = 1
+[32mpeer1.org1.example.com    |[0m [34m[028 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode lscc/businesschannel(github.com/hyperledger/fabric/core/scc/lscc) deployed
+[32mpeer1.org1.example.com    |[0m [34m[029 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init CSCC
+[32mpeer1.org1.example.com    |[0m [34m[02a 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode cscc/businesschannel(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[32mpeer1.org1.example.com    |[0m [34m[02b 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m Init QSCC
+[32mpeer1.org1.example.com    |[0m [34m[02c 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode qscc/businesschannel(github.com/hyperledger/fabric/core/scc/qscc) deployed
+[32mpeer1.org1.example.com    |[0m [34m[02d 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m system chaincode +lifecycle/businesschannel(github.com/hyperledger/fabric/core/chaincode/lifecycle) deployed
+[32mpeer1.org1.example.com    |[0m [34m[02e 12-19 08:04:08.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][34f82fc9] Exit chaincode: name:"cscc"  (68ms)
+[32mpeer1.org1.example.com    |[0m [34m[02f 12-19 08:04:09.88 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][a4f3909a] Entry chaincode: name:"cscc" 
+[32mpeer1.org1.example.com    |[0m [34m[030 12-19 08:04:09.88 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][a4f3909a] Exit chaincode: name:"cscc"  (1ms)
+[32mpeer1.org1.example.com    |[0m [34m[031 12-19 08:04:10.88 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][d611e06a] Entry chaincode: name:"qscc" 
+[32mpeer1.org1.example.com    |[0m [34m[032 12-19 08:04:10.88 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][d611e06a] Exit chaincode: name:"qscc"  (1ms)
+[32mpeer1.org1.example.com    |[0m [34m[033 12-19 08:04:14.49 UTC] [%{longpkg}] %{callpath} -> INFO[0m [72 32 148 207 43 200 54 126 88 127 106 39 63 11 115 118 68 203 117 91 77 91 239 181 113 99 83 246 115 236 189 16] : Some peer is already a leader
+[32mpeer1.org1.example.com    |[0m [34m[034 12-19 08:04:14.50 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [1] from buffer
+[32mpeer1.org1.example.com    |[0m [34m[035 12-19 08:04:14.50 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[32mpeer1.org1.example.com    |[0m [34m[036 12-19 08:04:14.50 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org2MSP for channel businesschannel to learn about
+[32mpeer1.org1.example.com    |[0m [34m[037 12-19 08:04:14.50 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[32mpeer1.org1.example.com    |[0m [33m[038 12-19 08:04:14.51 UTC] [%{longpkg}] %{callpath} -> WARN[0m Failed to update ordering service endpoints, due to Channel with businesschannel id was not found
+[32mpeer1.org1.example.com    |[0m [34m[039 12-19 08:04:14.52 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [1] in 26ms
+[32mpeer1.org1.example.com    |[0m [33m[03a 12-19 08:04:14.54 UTC] [%{longpkg}] %{callpath} -> WARN[0m peer0.org1.example.com:7051, PKIid:[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217] isn't responsive: EOF
+[32mpeer1.org1.example.com    |[0m [33m[03b 12-19 08:04:14.54 UTC] [%{longpkg}] %{callpath} -> WARN[0m Entering [[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217]]
+[32mpeer1.org1.example.com    |[0m [33m[03c 12-19 08:04:14.54 UTC] [%{longpkg}] %{callpath} -> WARN[0m Closing connection to Endpoint: peer0.org1.example.com:7051, InternalEndpoint: peer0.org1.example.com:7051, PKI-ID: [9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217], Metadata: []
+[32mpeer1.org1.example.com    |[0m [33m[03d 12-19 08:04:14.54 UTC] [%{longpkg}] %{callpath} -> WARN[0m Exiting
+[32mpeer1.org1.example.com    |[0m [34m[03e 12-19 08:04:14.55 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [1] with 1 transaction(s) in 25ms (state_validation=1ms block_commit=16ms state_commit=3ms)
+[32mpeer1.org1.example.com    |[0m [34m[03f 12-19 08:04:14.55 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [2] from buffer
+[32mpeer1.org1.example.com    |[0m [34m[040 12-19 08:04:14.59 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 2 organizations
+[32mpeer1.org1.example.com    |[0m [34m[041 12-19 08:04:14.59 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[32mpeer1.org1.example.com    |[0m [34m[042 12-19 08:04:14.59 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[32mpeer1.org1.example.com    |[0m [33m[043 12-19 08:04:14.60 UTC] [%{longpkg}] %{callpath} -> WARN[0m Failed to update ordering service endpoints, due to Channel with businesschannel id was not found
+[32mpeer1.org1.example.com    |[0m [34m[044 12-19 08:04:14.64 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [2] in 91ms
+[32mpeer1.org1.example.com    |[0m [34m[045 12-19 08:04:14.68 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [2] with 1 transaction(s) in 33ms (state_validation=3ms block_commit=22ms state_commit=3ms)
+[32mpeer1.org1.example.com    |[0m [34m[046 12-19 08:04:19.59 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][96184a09] Entry chaincode: name:"lscc" 
+[32mpeer1.org1.example.com    |[0m [34m[047 12-19 08:04:19.59 UTC] [%{longpkg}] %{callpath} -> INFO[0m Installed Chaincode [exp02] Version [1.0] to peer
+[32mpeer1.org1.example.com    |[0m [34m[048 12-19 08:04:19.59 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][96184a09] Exit chaincode: name:"lscc"  (2ms)
+[32mpeer1.org1.example.com    |[0m [34m[049 12-19 08:05:04.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [3] from buffer
+[32mpeer1.org1.example.com    |[0m [34m[04a 12-19 08:05:04.77 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [3] in 2ms
+[32mpeer1.org1.example.com    |[0m [34m[04b 12-19 08:05:04.77 UTC] [%{longpkg}] %{callpath} -> INFO[0m Channel [businesschannel]: Handling LSCC state update for chaincode [exp02]
+[32mpeer1.org1.example.com    |[0m [34m[04c 12-19 08:05:04.79 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [3] with 1 transaction(s) in 19ms (state_validation=1ms block_commit=12ms state_commit=2ms)
+[32mpeer1.org1.example.com    |[0m [34m[04d 12-19 08:05:48.56 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [4] from buffer
+[32mpeer1.org1.example.com    |[0m [34m[04e 12-19 08:05:48.56 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [4] in 2ms
+[32mpeer1.org1.example.com    |[0m [34m[04f 12-19 08:05:48.60 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [4] with 1 transaction(s) in 37ms (state_validation=0ms block_commit=28ms state_commit=5ms)
+[32mpeer1.org1.example.com    |[0m [34m[050 12-19 08:05:51.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [5] from buffer
+[32mpeer1.org1.example.com    |[0m [34m[051 12-19 08:05:51.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [5] in 1ms
+[32mpeer1.org1.example.com    |[0m [34m[052 12-19 08:05:51.91 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [5] with 1 transaction(s) in 39ms (state_validation=0ms block_commit=32ms state_commit=2ms)
+[32mpeer1.org1.example.com    |[0m [34m[053 12-19 08:06:09.88 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [6] from buffer
+[32mpeer1.org1.example.com    |[0m [33m[054 12-19 08:06:09.89 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[32mpeer1.org1.example.com    |[0m [33m[055 12-19 08:06:09.89 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[32mpeer1.org1.example.com    |[0m [34m[056 12-19 08:06:09.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 3 organizations
+[32mpeer1.org1.example.com    |[0m [34m[057 12-19 08:06:09.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[32mpeer1.org1.example.com    |[0m [34m[058 12-19 08:06:09.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[32mpeer1.org1.example.com    |[0m [34m[059 12-19 08:06:09.99 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org3MSP for channel businesschannel to learn about
+[32mpeer1.org1.example.com    |[0m [33m[05a 12-19 08:06:09.99 UTC] [%{longpkg}] %{callpath} -> WARN[0m Failed to update ordering service endpoints, due to Channel with businesschannel id was not found
+[32mpeer1.org1.example.com    |[0m [34m[05b 12-19 08:06:10.06 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [6] in 169ms
+[32mpeer1.org1.example.com    |[0m [34m[05c 12-19 08:06:10.09 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [6] with 1 transaction(s) in 37ms (state_validation=0ms block_commit=32ms state_commit=2ms)
+[32mpeer1.org1.example.com    |[0m [33m[05d 12-19 08:06:10.10 UTC] [%{longpkg}] %{callpath} -> WARN[0m peer0.org2.example.com:7051, PKIid:[8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5] isn't responsive: EOF
+[32mpeer1.org1.example.com    |[0m [33m[05e 12-19 08:06:10.11 UTC] [%{longpkg}] %{callpath} -> WARN[0m Entering [[8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5]]
+[32mpeer1.org1.example.com    |[0m [33m[05f 12-19 08:06:10.11 UTC] [%{longpkg}] %{callpath} -> WARN[0m Closing connection to Endpoint: peer0.org2.example.com:7051, InternalEndpoint: , PKI-ID: [8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5], Metadata: []
+[32mpeer1.org1.example.com    |[0m [33m[060 12-19 08:06:10.11 UTC] [%{longpkg}] %{callpath} -> WARN[0m Exiting
+[32mpeer1.org1.example.com    |[0m [33m[061 12-19 08:06:10.16 UTC] [%{longpkg}] %{callpath} -> WARN[0m peer0.org1.example.com:7051, PKIid:[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217] isn't responsive: EOF
+[32mpeer1.org1.example.com    |[0m [33m[062 12-19 08:06:10.17 UTC] [%{longpkg}] %{callpath} -> WARN[0m Entering [[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217]]
+[32mpeer1.org1.example.com    |[0m [33m[063 12-19 08:06:10.17 UTC] [%{longpkg}] %{callpath} -> WARN[0m Closing connection to Endpoint: peer0.org1.example.com:7051, InternalEndpoint: peer0.org1.example.com:7051, PKI-ID: [9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217], Metadata: []
+[32mpeer1.org1.example.com    |[0m [33m[064 12-19 08:06:10.17 UTC] [%{longpkg}] %{callpath} -> WARN[0m Exiting
+[32mpeer1.org1.example.com    |[0m [34m[065 12-19 08:06:25.16 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][625a099b] Entry chaincode: name:"cscc" 
+[32mpeer1.org1.example.com    |[0m [34m[066 12-19 08:06:25.16 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][625a099b] Exit chaincode: name:"cscc"  (1ms)
+[32mpeer1.org1.example.com    |[0m [34m[067 12-19 08:06:26.28 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][886ccb93] Entry chaincode: name:"qscc" 
+[32mpeer1.org1.example.com    |[0m [34m[068 12-19 08:06:26.28 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][886ccb93] Exit chaincode: name:"qscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[04e 12-19 08:05:46.54 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][cec69b4f] Exit chaincode: name:"exp02"  (7ms)
+[33mpeer0.org1.example.com    |[0m [34m[04f 12-19 08:05:48.55 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [4] from buffer
+[33mpeer0.org1.example.com    |[0m [34m[050 12-19 08:05:48.55 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [4] in 0ms
+[33mpeer0.org1.example.com    |[0m [34m[051 12-19 08:05:48.60 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [4] with 1 transaction(s) in 43ms (state_validation=0ms block_commit=27ms state_commit=4ms)
+[33mpeer0.org1.example.com    |[0m [34m[052 12-19 08:05:50.08 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][5fc2faf1] Entry chaincode: name:"exp02" 
+[33mpeer0.org1.example.com    |[0m [34m[053 12-19 08:05:50.09 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][5fc2faf1] Exit chaincode: name:"exp02"  (2ms)
+[33mpeer0.org1.example.com    |[0m [34m[054 12-19 08:05:51.86 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [5] from buffer
+[33mpeer0.org1.example.com    |[0m [34m[055 12-19 08:05:51.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [5] in 3ms
+[33mpeer0.org1.example.com    |[0m [34m[056 12-19 08:05:51.93 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [5] with 1 transaction(s) in 55ms (state_validation=0ms block_commit=48ms state_commit=4ms)
+[33mpeer0.org1.example.com    |[0m [34m[057 12-19 08:05:52.35 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][f1ea94bb] Entry chaincode: name:"exp02" 
+[33mpeer0.org1.example.com    |[0m [34m[058 12-19 08:05:52.36 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][f1ea94bb] Exit chaincode: name:"exp02"  (12ms)
+[33mpeer0.org1.example.com    |[0m [34m[059 12-19 08:05:53.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][b803f511] Entry chaincode: name:"lscc" 
+[33mpeer0.org1.example.com    |[0m [34m[05a 12-19 08:05:53.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][b803f511] Exit chaincode: name:"lscc"  (2ms)
+[33mpeer0.org1.example.com    |[0m [34m[05b 12-19 08:05:53.56 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][9a734770] Entry chaincode: name:"lscc" 
+[33mpeer0.org1.example.com    |[0m [34m[05c 12-19 08:05:53.56 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][9a734770] Exit chaincode: name:"lscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[05d 12-19 08:05:53.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][977f4423] Entry chaincode: name:"lscc" 
+[33mpeer0.org1.example.com    |[0m [34m[05e 12-19 08:05:53.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][977f4423] Exit chaincode: name:"lscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[05f 12-19 08:05:54.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][d5e86d42] Entry chaincode: name:"lscc" 
+[33mpeer0.org1.example.com    |[0m [34m[060 12-19 08:05:54.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][d5e86d42] Exit chaincode: name:"lscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[061 12-19 08:05:54.61 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][bc113975] Entry chaincode: name:"lscc" 
+[33mpeer0.org1.example.com    |[0m [34m[062 12-19 08:05:54.61 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][bc113975] Exit chaincode: name:"lscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[063 12-19 08:05:55.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][5a22e70a] Entry chaincode: name:"qscc" 
+[33mpeer0.org1.example.com    |[0m [34m[064 12-19 08:05:55.30 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][5a22e70a] Exit chaincode: name:"qscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[065 12-19 08:05:55.85 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][d61eed8d] Entry chaincode: name:"qscc" 
+[33mpeer0.org1.example.com    |[0m [34m[066 12-19 08:05:55.85 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][d61eed8d] Exit chaincode: name:"qscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[067 12-19 08:05:56.71 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][98f2376d] Entry chaincode: name:"cscc" 
+[33mpeer0.org1.example.com    |[0m [34m[068 12-19 08:05:56.71 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][98f2376d] Exit chaincode: name:"cscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[069 12-19 08:05:57.32 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][4e0930c5] Entry chaincode: name:"cscc" 
+[33mpeer0.org1.example.com    |[0m [34m[06a 12-19 08:05:57.32 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][4e0930c5] Exit chaincode: name:"cscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[06b 12-19 08:05:57.71 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][f01ce710] Entry chaincode: name:"cscc" 
+[33mpeer0.org1.example.com    |[0m [34m[06c 12-19 08:05:57.71 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][f01ce710] Exit chaincode: name:"cscc"  (1ms)
+[33mpeer0.org1.example.com    |[0m [34m[06d 12-19 08:06:09.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [6] from buffer
+[33mpeer0.org1.example.com    |[0m [33m[06e 12-19 08:06:09.88 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[33mpeer0.org1.example.com    |[0m [33m[06f 12-19 08:06:09.88 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[33mpeer0.org1.example.com    |[0m [34m[070 12-19 08:06:09.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 3 organizations
+[33mpeer0.org1.example.com    |[0m [34m[071 12-19 08:06:09.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org3MSP for channel businesschannel to learn about
+[33mpeer0.org1.example.com    |[0m [34m[072 12-19 08:06:09.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[33mpeer0.org1.example.com    |[0m [34m[073 12-19 08:06:09.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m Anchor peer with same endpoint, skipping connecting to myself
+[33mpeer0.org1.example.com    |[0m [34m[074 12-19 08:06:09.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[33mpeer0.org1.example.com    |[0m [34m[075 12-19 08:06:10.01 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [6] in 137ms
+[33mpeer0.org1.example.com    |[0m [34m[076 12-19 08:06:10.13 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [6] with 1 transaction(s) in 125ms (state_validation=0ms block_commit=88ms state_commit=26ms)
+[33mpeer0.org1.example.com    |[0m [34m[077 12-19 08:06:24.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][a526aa94] Entry chaincode: name:"cscc" 
+[33mpeer0.org1.example.com    |[0m [34m[078 12-19 08:06:24.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][a526aa94] Exit chaincode: name:"cscc"  (0ms)
+[33mpeer0.org1.example.com    |[0m [34m[079 12-19 08:06:26.04 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][466c7876] Entry chaincode: name:"qscc" 
+[33mpeer0.org1.example.com    |[0m [34m[07a 12-19 08:06:26.04 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][466c7876] Exit chaincode: name:"qscc"  (1ms)
+[35mpeer1.org2.example.com    |[0m [34m[042 12-19 08:04:15.16 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [2] in 67ms
+[35mpeer1.org2.example.com    |[0m [34m[043 12-19 08:04:15.19 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [2] with 1 transaction(s) in 25ms (state_validation=0ms block_commit=14ms state_commit=5ms)
+[35mpeer1.org2.example.com    |[0m [33m[044 12-19 08:04:15.20 UTC] [%{longpkg}] %{callpath} -> WARN[0m peer0.org1.example.com:7051, PKIid:[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217] isn't responsive: EOF
+[35mpeer1.org2.example.com    |[0m [33m[045 12-19 08:04:15.20 UTC] [%{longpkg}] %{callpath} -> WARN[0m Entering [[9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217]]
+[35mpeer1.org2.example.com    |[0m [33m[046 12-19 08:04:15.20 UTC] [%{longpkg}] %{callpath} -> WARN[0m Closing connection to Endpoint: peer0.org1.example.com:7051, InternalEndpoint: , PKI-ID: [9 159 19 203 226 219 13 6 93 161 254 206 255 179 131 59 221 163 227 236 120 147 164 10 55 182 11 208 181 66 69 217], Metadata: []
+[35mpeer1.org2.example.com    |[0m [33m[047 12-19 08:04:15.20 UTC] [%{longpkg}] %{callpath} -> WARN[0m Exiting
+[35mpeer1.org2.example.com    |[0m [33m[048 12-19 08:04:16.30 UTC] [%{longpkg}] %{callpath} -> WARN[0m peer0.org2.example.com:7051, PKIid:[8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5] isn't responsive: EOF
+[35mpeer1.org2.example.com    |[0m [33m[049 12-19 08:04:16.30 UTC] [%{longpkg}] %{callpath} -> WARN[0m Entering [[8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5]]
+[35mpeer1.org2.example.com    |[0m [33m[04a 12-19 08:04:16.30 UTC] [%{longpkg}] %{callpath} -> WARN[0m Closing connection to Endpoint: peer0.org2.example.com:7051, InternalEndpoint: peer0.org2.example.com:7051, PKI-ID: [8 167 130 97 213 207 152 101 0 132 168 182 50 207 16 13 177 180 254 43 58 60 255 49 42 19 47 207 46 240 236 5], Metadata: []
+[35mpeer1.org2.example.com    |[0m [33m[04b 12-19 08:04:16.30 UTC] [%{longpkg}] %{callpath} -> WARN[0m Exiting
+[35mpeer1.org2.example.com    |[0m [33m[04c 12-19 08:04:16.75 UTC] [%{longpkg}] %{callpath} -> WARN[0m StateInfo message GossipMessage: tag:CHAN_OR_ORG state_info:<timestamp:<inc_num:1545206648740859400 seq_num:1545206654684439000 > pki_id:"H \224\317+\3106~X\177j'?\013svD\313u[M[\357\265qcS\366s\354\275\020" channel_MAC:"T\3374D\341/\263D<\211\300\037\211\362\237\230\203\335\305\273\244\010\216\305/5\016\276f)1$" properties:<ledger_height:3 > > , Envelope: 98 bytes, Signature: 70 bytes is found invalid: PKIID wasn't found
+[35mpeer1.org2.example.com    |[0m [33m[04d 12-19 08:04:16.75 UTC] [%{longpkg}] %{callpath} -> WARN[0m Message GossipMessage: tag:CHAN_OR_ORG state_info:<timestamp:<inc_num:1545206648740859400 seq_num:1545206654684439000 > pki_id:"H \224\317+\3106~X\177j'?\013svD\313u[M[\357\265qcS\366s\354\275\020" channel_MAC:"T\3374D\341/\263D<\211\300\037\211\362\237\230\203\335\305\273\244\010\216\305/5\016\276f)1$" properties:<ledger_height:3 > > , Envelope: 98 bytes, Signature: 70 bytes isn't valid
+[35mpeer1.org2.example.com    |[0m [34m[04e 12-19 08:04:21.09 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][4ade2172] Entry chaincode: name:"lscc" 
+[35mpeer1.org2.example.com    |[0m [34m[04f 12-19 08:04:21.09 UTC] [%{longpkg}] %{callpath} -> INFO[0m Installed Chaincode [exp02] Version [1.0] to peer
+[35mpeer1.org2.example.com    |[0m [34m[050 12-19 08:04:21.09 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][4ade2172] Exit chaincode: name:"lscc"  (4ms)
+[35mpeer1.org2.example.com    |[0m [34m[051 12-19 08:05:04.79 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [3] from buffer
+[35mpeer1.org2.example.com    |[0m [34m[052 12-19 08:05:04.79 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [3] in 1ms
+[35mpeer1.org2.example.com    |[0m [34m[053 12-19 08:05:04.79 UTC] [%{longpkg}] %{callpath} -> INFO[0m Channel [businesschannel]: Handling LSCC state update for chaincode [exp02]
+[35mpeer1.org2.example.com    |[0m [34m[054 12-19 08:05:04.80 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [3] with 1 transaction(s) in 10ms (state_validation=0ms block_commit=6ms state_commit=1ms)
+[35mpeer1.org2.example.com    |[0m [34m[055 12-19 08:05:05.49 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][5ac0ad53] Entry chaincode: name:"exp02" 
+[35mpeer1.org2.example.com    |[0m [34m[056 12-19 08:05:05.51 UTC] [%{longpkg}] %{callpath} -> INFO[0m building chaincode with ldflagsOpt: '-ldflags "-linkmode external -extldflags '-static'"'
+[35mpeer1.org2.example.com    |[0m [34m[057 12-19 08:05:46.24 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][5ac0ad53] Exit chaincode: name:"exp02"  (40784ms)
+[35mpeer1.org2.example.com    |[0m [34m[058 12-19 08:05:46.86 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][7604474e] Entry chaincode: name:"exp02" 
+[35mpeer1.org2.example.com    |[0m [34m[059 12-19 08:05:46.86 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][7604474e] Exit chaincode: name:"exp02"  (3ms)
+[35mpeer1.org2.example.com    |[0m [34m[05a 12-19 08:05:48.57 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [4] from buffer
+[36mpeer0.org2.example.com    |[0m [34m[04a 12-19 08:05:04.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [3] in 5ms
+[36mpeer0.org2.example.com    |[0m [34m[04b 12-19 08:05:04.76 UTC] [%{longpkg}] %{callpath} -> INFO[0m Channel [businesschannel]: Handling LSCC state update for chaincode [exp02]
+[36mpeer0.org2.example.com    |[0m [34m[04c 12-19 08:05:04.79 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [3] with 1 transaction(s) in 25ms (state_validation=4ms block_commit=14ms state_commit=3ms)
+[36mpeer0.org2.example.com    |[0m [34m[04d 12-19 08:05:48.55 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [4] from buffer
+[36mpeer0.org2.example.com    |[0m [34m[04e 12-19 08:05:48.55 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [4] in 1ms
+[36mpeer0.org2.example.com    |[0m [34m[04f 12-19 08:05:48.59 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [4] with 1 transaction(s) in 30ms (state_validation=0ms block_commit=21ms state_commit=5ms)
+[36mpeer0.org2.example.com    |[0m [34m[050 12-19 08:05:51.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [5] from buffer
+[36mpeer0.org2.example.com    |[0m [34m[051 12-19 08:05:51.89 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [5] in 17ms
+[36mpeer0.org2.example.com    |[0m [34m[052 12-19 08:05:51.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [5] with 1 transaction(s) in 43ms (state_validation=0ms block_commit=38ms state_commit=2ms)
+[36mpeer0.org2.example.com    |[0m [34m[053 12-19 08:06:09.87 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [6] from buffer
+[36mpeer0.org2.example.com    |[0m [33m[054 12-19 08:06:09.88 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[36mpeer0.org2.example.com    |[0m [33m[055 12-19 08:06:09.88 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[36mpeer0.org2.example.com    |[0m [34m[056 12-19 08:06:09.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 3 organizations
+[36mpeer0.org2.example.com    |[0m [34m[057 12-19 08:06:09.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org3MSP for channel businesschannel to learn about
+[36mpeer0.org2.example.com    |[0m [34m[058 12-19 08:06:09.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[36mpeer0.org2.example.com    |[0m [34m[059 12-19 08:06:09.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[36mpeer0.org2.example.com    |[0m [34m[05a 12-19 08:06:09.94 UTC] [%{longpkg}] %{callpath} -> INFO[0m Anchor peer with same endpoint, skipping connecting to myself
+[36mpeer0.org2.example.com    |[0m [34m[05b 12-19 08:06:09.96 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [6] in 93ms
+[36mpeer0.org2.example.com    |[0m [34m[05c 12-19 08:06:10.00 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [6] with 1 transaction(s) in 41ms (state_validation=0ms block_commit=31ms state_commit=7ms)
+[36mpeer0.org2.example.com    |[0m [34m[05d 12-19 08:06:25.33 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][5e3b26ea] Entry chaincode: name:"cscc" 
+[36mpeer0.org2.example.com    |[0m [34m[05e 12-19 08:06:25.33 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][5e3b26ea] Exit chaincode: name:"cscc"  (1ms)
+[36mpeer0.org2.example.com    |[0m [34m[05f 12-19 08:06:26.46 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][e7af86e2] Entry chaincode: name:"qscc" 
+[36mpeer0.org2.example.com    |[0m [34m[060 12-19 08:06:26.46 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][e7af86e2] Exit chaincode: name:"qscc"  (2ms)
+[35mpeer1.org2.example.com    |[0m [34m[05b 12-19 08:05:48.57 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [4] in 4ms
+[35mpeer1.org2.example.com    |[0m [34m[05c 12-19 08:05:48.61 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [4] with 1 transaction(s) in 26ms (state_validation=0ms block_commit=21ms state_commit=2ms)
+[35mpeer1.org2.example.com    |[0m [34m[05d 12-19 08:05:49.47 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][35acdb5a] Entry chaincode: name:"exp02" 
+[35mpeer1.org2.example.com    |[0m [34m[05e 12-19 08:05:49.48 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][35acdb5a] Exit chaincode: name:"exp02"  (11ms)
+[35mpeer1.org2.example.com    |[0m [34m[05f 12-19 08:05:49.83 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][14d8d951] Entry chaincode: name:"exp02" 
+[35mpeer1.org2.example.com    |[0m [34m[060 12-19 08:05:49.84 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel][14d8d951] Exit chaincode: name:"exp02"  (7ms)
+[35mpeer1.org2.example.com    |[0m [34m[061 12-19 08:05:51.88 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [5] from buffer
+[35mpeer1.org2.example.com    |[0m [34m[062 12-19 08:05:51.88 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [5] in 5ms
+[35mpeer1.org2.example.com    |[0m [34m[063 12-19 08:05:51.92 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [5] with 1 transaction(s) in 34ms (state_validation=0ms block_commit=22ms state_commit=9ms)
+[35mpeer1.org2.example.com    |[0m [34m[064 12-19 08:06:09.89 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Received block [6] from buffer
+[35mpeer1.org2.example.com    |[0m [33m[065 12-19 08:06:09.89 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[35mpeer1.org2.example.com    |[0m [33m[066 12-19 08:06:09.89 UTC] [%{longpkg}] %{callpath} -> WARN[0m De-duplicating identity 0a074f7267314d535012aa062d2d2d2d2d424547494e2043455254494649434154452d2d2d2d2d0a4d4949434b6a4343416447674177494241674952414e7a345049457a56423178717639624f744f614e2b3877436759494b6f5a497a6a304541774977637a454c0a4d416b474131554542684d4356564d78457a415242674e5642416754436b4e6862476c6d62334a7561574578466a415542674e564241635444564e68626942470a636d467559326c7a593238784754415842674e5642416f54454739795a7a45755a586868625842735a53356a623230784844416142674e5642414d5445324e680a4c6d39795a7a45755a586868625842735a53356a623230774868634e4d5467784d6a45354d4463314f5441775768634e4d6a67784d6a45324d4463314f5441770a576a42734d517377435159445651514745774a56557a45544d4245474131554543424d4b5132467361575a76636d3570595445574d4251474131554542784d4e0a5532467549455a795957356a61584e6a627a45504d4130474131554543784d47593278705a5735304d523877485159445651514444425a425a473170626b42760a636d63784c6d56345957317762475575593239744d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a30444151634451674145335a79366a6a45590a4c69343562504b56416f5968506b64755567756930454c593943414d5a6b436464472f6f446a6e66584e5767614b526e7772365353653972773656356d534f730a4e4c4d37624c78744542612b634b4e4e4d45737744675944565230504151482f42415144416765414d41774741315564457745422f7751434d4141774b7759440a5652306a42435177496f4167645848684e786650744f7a3835506c4832594972673639474a43565551777178344e557776796e6749503877436759494b6f5a490a7a6a30454177494452774177524149674b565078706c7162543842454a4475666f38483635367564584d2f53473048464c436e334c526b515341554349456e6f0a453356544f79725241425970626e3033384633644c58514d692f344e5a2f50317a49552b6d4b57560a2d2d2d2d2d454e442043455254494649434154452d2d2d2d2d0a at index 2 in signature set
+[35mpeer1.org2.example.com    |[0m [34m[067 12-19 08:06:09.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m Joining gossip network of channel businesschannel with 3 organizations
+[35mpeer1.org2.example.com    |[0m [34m[068 12-19 08:06:09.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org2MSP for channel businesschannel : [{peer0.org2.example.com 7051}]
+[35mpeer1.org2.example.com    |[0m [34m[069 12-19 08:06:09.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m No configured anchor peers of Org3MSP for channel businesschannel to learn about
+[35mpeer1.org2.example.com    |[0m [34m[06a 12-19 08:06:09.97 UTC] [%{longpkg}] %{callpath} -> INFO[0m Learning about the configured anchor peers of Org1MSP for channel businesschannel : [{peer0.org1.example.com 7051}]
+[35mpeer1.org2.example.com    |[0m [33m[06b 12-19 08:06:09.97 UTC] [%{longpkg}] %{callpath} -> WARN[0m Failed to update ordering service endpoints, due to Channel with businesschannel id was not found
+[35mpeer1.org2.example.com    |[0m [34m[06c 12-19 08:06:10.14 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Validated block [6] in 248ms
+[35mpeer1.org2.example.com    |[0m [34m[06d 12-19 08:06:10.22 UTC] [%{longpkg}] %{callpath} -> INFO[0m [businesschannel] Committed block [6] with 1 transaction(s) in 64ms (state_validation=0ms block_commit=54ms state_commit=5ms)
+[35mpeer1.org2.example.com    |[0m [34m[06e 12-19 08:06:25.52 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][ebdf9525] Entry chaincode: name:"cscc" 
+[35mpeer1.org2.example.com    |[0m [34m[06f 12-19 08:06:25.52 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][ebdf9525] Exit chaincode: name:"cscc"  (1ms)
+[35mpeer1.org2.example.com    |[0m [34m[070 12-19 08:06:26.69 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][9844fc18] Entry chaincode: name:"qscc" 
+[35mpeer1.org2.example.com    |[0m [34m[071 12-19 08:06:26.69 UTC] [%{longpkg}] %{callpath} -> INFO[0m [][9844fc18] Exit chaincode: name:"qscc"  (1ms)

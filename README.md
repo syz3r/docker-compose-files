@@ -2,10 +2,13 @@ Docker Compose Files
 ===
 Some typical docker compose examples.
 
-# Install Docker and Docker Compose
-Take ubuntu for example
+If you're not familiar with Docker, can have a look at these books (in CN):
 
-```sh
+* [Docker Practice](https://github.com/yeasy/docker_practice)
+
+# Install Docker&Docker Compose
+
+```bash
 $ curl -sSL https://get.docker.com/ | sh
 $ sudo pip install docker-compose
 ```
@@ -19,6 +22,10 @@ See [Docker Compose Documentation](https://docs.docker.com/compose/).
 ## [consul-discovery](consul-discovery)
 Using consul to make a service-discoverable architecture.
 
+## [elk](elk)
+ELK example.
+
+
 ## [elk_netflow](elk_netflow)
 Elk cluster, with netflow support.
 ```sh
@@ -28,10 +35,15 @@ docker-compose scale es=3
 ## [haproxy_web](haproxy_web)
 A simple haproxy and web applications cluster.
 
-## [hyperledger](hyperledger)
-Quickly bootup a hyperledger cluster with several validator nodes, without vagrant or any manual configuration. By default, the cluster enables PBFT as the consensus.
+## [hyperledger_fabric](hyperledger_fabric)
+Quickly bootup a hyperledger fabric cluster with several validator nodes, without vagrant or any manual configuration.
 
-See [hyperledger](hyperledger) for more details.
+Now we support from v0.6 to v1.0.x.
+
+See [hyperledger_fabric](hyperledger_fabric) for more details.
+
+## [kafka](kafka)
+Start a simple kafka service for testing.
 
 ## [mongo_cluster](mongo_cluster)
 Start 3 mongo instance to make a replica set.

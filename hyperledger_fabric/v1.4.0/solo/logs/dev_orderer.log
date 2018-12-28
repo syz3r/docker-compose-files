@@ -1,0 +1,172 @@
+[34m2018-12-19 08:11:33.987 UTC [localconfig] completeInitialization -> INFO 001[0m Kafka.Version unset, setting to 0.10.2.0
+[34m2018-12-19 08:11:34.124 UTC [orderer.common.server] prettyPrintStruct -> INFO 002[0m Orderer config values:
+	General.LedgerType = "file"
+	General.ListenAddress = "0.0.0.0"
+	General.ListenPort = 7050
+	General.TLS.Enabled = true
+	General.TLS.PrivateKey = "/var/hyperledger/orderer/tls/server.key"
+	General.TLS.Certificate = "/var/hyperledger/orderer/tls/server.crt"
+	General.TLS.RootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+	General.TLS.ClientAuthRequired = false
+	General.TLS.ClientRootCAs = []
+	General.Cluster.RootCAs = [/etc/hyperledger/fabric/tls/ca.crt]
+	General.Cluster.ClientCertificate = ""
+	General.Cluster.ClientPrivateKey = ""
+	General.Cluster.DialTimeout = 5s
+	General.Cluster.RPCTimeout = 7s
+	General.Cluster.ReplicationBufferSize = 20971520
+	General.Cluster.ReplicationPullTimeout = 5s
+	General.Cluster.ReplicationRetryTimeout = 5s
+	General.Keepalive.ServerMinInterval = 1m0s
+	General.Keepalive.ServerInterval = 2h0m0s
+	General.Keepalive.ServerTimeout = 20s
+	General.GenesisMethod = "file"
+	General.GenesisProfile = "SampleInsecureSolo"
+	General.SystemChannel = "test-system-channel-name"
+	General.GenesisFile = "/var/hyperledger/orderer/orderer.genesis.block"
+	General.Profile.Enabled = false
+	General.Profile.Address = "0.0.0.0:6060"
+	General.LocalMSPDir = "/var/hyperledger/orderer/msp"
+	General.LocalMSPID = "OrdererMSP"
+	General.BCCSP.ProviderName = "SW"
+	General.BCCSP.SwOpts.SecLevel = 256
+	General.BCCSP.SwOpts.HashFamily = "SHA2"
+	General.BCCSP.SwOpts.Ephemeral = false
+	General.BCCSP.SwOpts.FileKeystore.KeyStorePath = "/var/hyperledger/orderer/msp/keystore"
+	General.BCCSP.SwOpts.DummyKeystore =
+	General.BCCSP.SwOpts.InmemKeystore =
+	General.BCCSP.PluginOpts =
+	General.Authentication.TimeWindow = 15m0s
+	FileLedger.Location = "/var/hyperledger/production/orderer"
+	FileLedger.Prefix = "hyperledger-fabric-ordererledger"
+	RAMLedger.HistorySize = 1000
+	Kafka.Retry.ShortInterval = 5s
+	Kafka.Retry.ShortTotal = 10m0s
+	Kafka.Retry.LongInterval = 5m0s
+	Kafka.Retry.LongTotal = 12h0m0s
+	Kafka.Retry.NetworkTimeouts.DialTimeout = 10s
+	Kafka.Retry.NetworkTimeouts.ReadTimeout = 10s
+	Kafka.Retry.NetworkTimeouts.WriteTimeout = 10s
+	Kafka.Retry.Metadata.RetryMax = 3
+	Kafka.Retry.Metadata.RetryBackoff = 250ms
+	Kafka.Retry.Producer.RetryMax = 3
+	Kafka.Retry.Producer.RetryBackoff = 100ms
+	Kafka.Retry.Consumer.RetryBackoff = 2s
+	Kafka.Verbose = false
+	Kafka.Version = 0.10.2.0
+	Kafka.TLS.Enabled = false
+	Kafka.TLS.PrivateKey = ""
+	Kafka.TLS.Certificate = ""
+	Kafka.TLS.RootCAs = []
+	Kafka.TLS.ClientAuthRequired = false
+	Kafka.TLS.ClientRootCAs = []
+	Kafka.SASLPlain.Enabled = false
+	Kafka.SASLPlain.User = ""
+	Kafka.SASLPlain.Password = ""
+	Kafka.Topic.ReplicationFactor = 3
+	Debug.BroadcastTraceDir = ""
+	Debug.DeliverTraceDir = ""
+	Consensus = map[WALDir:/var/hyperledger/production/orderer/etcdraft/wal SnapDir:/var/hyperledger/production/orderer/etcdraft/snapshot]
+	Operations.ListenAddress = "127.0.0.1:8443"
+	Operations.TLS.Enabled = false
+	Operations.TLS.PrivateKey = ""
+	Operations.TLS.Certificate = ""
+	Operations.TLS.RootCAs = []
+	Operations.TLS.ClientAuthRequired = false
+	Operations.TLS.ClientRootCAs = []
+	Metrics.Provider = "disabled"
+	Metrics.Statsd.Network = "udp"
+	Metrics.Statsd.Address = "127.0.0.1:8125"
+	Metrics.Statsd.WriteInterval = 30s
+	Metrics.Statsd.Prefix = ""
+[34m2018-12-19 08:11:34.175 UTC [orderer.common.server] initializeServerConfig -> INFO 003[0m Starting orderer with TLS enabled
+[34m2018-12-19 08:11:34.180 UTC [fsblkstorage] newBlockfileMgr -> INFO 004[0m Getting block information from block storage
+[34m2018-12-19 08:11:34.204 UTC [orderer.commmon.multichannel] Initialize -> INFO 005[0m Starting system channel 'testchainid' with genesis block hash cde6efa82d0288cf91294accd919b39e2e13c658393e2d2d62d545b9d2dd5999 and orderer type solo
+[34m2018-12-19 08:11:34.204 UTC [orderer.common.server] Start -> INFO 006[0m Starting orderer:
+ Version: 1.4.0-rc1
+ Commit SHA: development build
+ Go version: go1.11.2
+ OS/Arch: linux/amd64
+[34m2018-12-19 08:11:34.204 UTC [orderer.common.server] Start -> INFO 007[0m Beginning to serve requests
+[34m2018-12-19 08:11:39.250 UTC [comm.grpc.server] 1 -> INFO 008[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:39.196Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60746", "grpc.code": "OK", "grpc.call_duration": "53.8668ms"}
+[34m2018-12-19 08:11:39.250 UTC [comm.grpc.server] 1 -> INFO 009[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:39.211Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Broadcast", "grpc.peer_address": "172.18.0.3:60748", "grpc.code": "OK", "grpc.call_duration": "39.6923ms"}
+[34m2018-12-19 08:11:39.268 UTC [fsblkstorage] newBlockfileMgr -> INFO 00a[0m Getting block information from block storage
+[34m2018-12-19 08:11:39.276 UTC [orderer.commmon.multichannel] newChain -> INFO 00b[0m Created and starting new chain businesschannel
+[33m2018-12-19 08:11:39.487 UTC [common.deliver] Handle -> WARN 00c[0m Error reading from 172.18.0.3:60750: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:11:39.489 UTC [comm.grpc.server] 1 -> INFO 00d[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:39.271Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60750", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "218.3558ms"}
+[33m2018-12-19 08:11:43.511 UTC [orderer.common.broadcast] Handle -> WARN 00e[0m Error reading from 172.18.0.3:60778: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:11:43.511 UTC [comm.grpc.server] 1 -> INFO 00f[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:43.487Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Broadcast", "grpc.peer_address": "172.18.0.3:60778", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "24.3837ms"}
+[33m2018-12-19 08:11:43.512 UTC [common.deliver] Handle -> WARN 010[0m Error reading from 172.18.0.3:60776: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:11:43.512 UTC [comm.grpc.server] 1 -> INFO 011[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:43.469Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60776", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "43.455ms"}
+[33m2018-12-19 08:11:45.711 UTC [orderer.common.broadcast] Handle -> WARN 012[0m Error reading from 172.18.0.3:60782: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:11:45.712 UTC [comm.grpc.server] 1 -> INFO 013[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:45.685Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Broadcast", "grpc.peer_address": "172.18.0.3:60782", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "26.7804ms"}
+[33m2018-12-19 08:11:45.717 UTC [common.deliver] Handle -> WARN 014[0m Error reading from 172.18.0.3:60780: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:11:45.718 UTC [comm.grpc.server] 1 -> INFO 015[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:45.669Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60780", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "49.9858ms"}
+[33m2018-12-19 08:12:39.970 UTC [orderer.common.broadcast] Handle -> WARN 016[0m Error reading from 172.18.0.3:60852: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:12:39.971 UTC [comm.grpc.server] 1 -> INFO 017[0m streaming call completed {"grpc.start_time": "2018-12-19T08:11:54.725Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Broadcast", "grpc.peer_address": "172.18.0.3:60852", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "45.3166346s"}
+[33m2018-12-19 08:13:29.916 UTC [orderer.common.broadcast] Handle -> WARN 018[0m Error reading from 172.18.0.3:60870: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:29.916 UTC [comm.grpc.server] 1 -> INFO 019[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:29.89Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Broadcast", "grpc.peer_address": "172.18.0.3:60870", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "26.4973ms"}
+[33m2018-12-19 08:13:34.257 UTC [orderer.common.broadcast] Handle -> WARN 01a[0m Error reading from 172.18.0.3:60884: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:34.257 UTC [comm.grpc.server] 1 -> INFO 01b[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:34.221Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Broadcast", "grpc.peer_address": "172.18.0.3:60884", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "36.7293ms"}
+[33m2018-12-19 08:13:43.206 UTC [common.deliver] Handle -> WARN 01c[0m Error reading from 172.18.0.3:60934: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:43.208 UTC [comm.grpc.server] 1 -> INFO 01d[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:43.2Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60934", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "8.3707ms"}
+[33m2018-12-19 08:13:43.548 UTC [common.deliver] Handle -> WARN 01e[0m Error reading from 172.18.0.3:60936: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:43.548 UTC [comm.grpc.server] 1 -> INFO 01f[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:43.529Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60936", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "18.63ms"}
+[33m2018-12-19 08:13:43.707 UTC [common.deliver] Handle -> WARN 020[0m Error reading from 172.18.0.3:60938: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:43.708 UTC [comm.grpc.server] 1 -> INFO 021[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:43.7Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60938", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "8.1067ms"}
+[33m2018-12-19 08:13:43.955 UTC [common.deliver] Handle -> WARN 022[0m Error reading from 172.18.0.3:60940: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:43.955 UTC [comm.grpc.server] 1 -> INFO 023[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:43.931Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60940", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "23.8715ms"}
+[33m2018-12-19 08:13:44.438 UTC [common.deliver] Handle -> WARN 024[0m Error reading from 172.18.0.3:60942: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:44.439 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:44.425Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60942", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "14.0098ms"}
+[33m2018-12-19 08:13:44.816 UTC [common.deliver] Handle -> WARN 026[0m Error reading from 172.18.0.3:60944: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:44.817 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:44.795Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60944", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "23.1935ms"}
+[33m2018-12-19 08:13:45.232 UTC [common.deliver] Handle -> WARN 028[0m Error reading from 172.18.0.3:60946: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:45.233 UTC [comm.grpc.server] 1 -> INFO 029[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:45.221Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60946", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "11.2157ms"}
+[33m2018-12-19 08:13:45.635 UTC [common.deliver] Handle -> WARN 02a[0m Error reading from 172.18.0.3:60948: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:45.635 UTC [comm.grpc.server] 1 -> INFO 02b[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:45.621Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60948", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "14.7427ms"}
+[33m2018-12-19 08:13:45.894 UTC [common.deliver] Handle -> WARN 02c[0m Error reading from 172.18.0.3:60950: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:45.894 UTC [comm.grpc.server] 1 -> INFO 02d[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:45.884Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60950", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "10.3308ms"}
+[33m2018-12-19 08:13:46.158 UTC [common.deliver] Handle -> WARN 02e[0m Error reading from 172.18.0.3:60952: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:46.158 UTC [comm.grpc.server] 1 -> INFO 02f[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:46.138Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60952", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "19.7885ms"}
+[33m2018-12-19 08:13:46.458 UTC [common.deliver] Handle -> WARN 030[0m Error reading from 172.18.0.3:60954: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:46.459 UTC [comm.grpc.server] 1 -> INFO 031[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:46.445Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60954", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "13.8658ms"}
+[33m2018-12-19 08:13:46.852 UTC [common.deliver] Handle -> WARN 032[0m Error reading from 172.18.0.3:60956: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:46.852 UTC [comm.grpc.server] 1 -> INFO 033[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:46.842Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60956", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "10.6695ms"}
+[33m2018-12-19 08:13:55.768 UTC [cauthdsl] deduplicate -> WARN 034[0m De-duplicating identity [Org1MSP0270edfed53a78d7d3c66dc25737f57f956e48ef69dca5ecc91c26679dd4eff3] at index 2 in signature set
+[33m2018-12-19 08:13:55.769 UTC [cauthdsl] deduplicate -> WARN 035[0m De-duplicating identity [Org1MSP0270edfed53a78d7d3c66dc25737f57f956e48ef69dca5ecc91c26679dd4eff3] at index 2 in signature set
+[33m2018-12-19 08:13:55.815 UTC [common.deliver] Handle -> WARN 036[0m Error reading from 172.18.0.3:60958: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:55.815 UTC [comm.grpc.server] 1 -> INFO 037[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:55.739Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60958", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "76.1519ms"}
+[33m2018-12-19 08:13:55.820 UTC [orderer.common.broadcast] Handle -> WARN 038[0m Error reading from 172.18.0.3:60960: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:55.824 UTC [comm.grpc.server] 1 -> INFO 039[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:55.763Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Broadcast", "grpc.peer_address": "172.18.0.3:60960", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "61.462ms"}
+[33m2018-12-19 08:13:55.827 UTC [cauthdsl] deduplicate -> WARN 03a[0m De-duplicating identity [Org1MSP0270edfed53a78d7d3c66dc25737f57f956e48ef69dca5ecc91c26679dd4eff3] at index 2 in signature set
+[33m2018-12-19 08:13:55.828 UTC [cauthdsl] deduplicate -> WARN 03b[0m De-duplicating identity [Org1MSP0270edfed53a78d7d3c66dc25737f57f956e48ef69dca5ecc91c26679dd4eff3] at index 2 in signature set
+[33m2018-12-19 08:13:58.012 UTC [common.deliver] Handle -> WARN 03c[0m Error reading from 172.18.0.3:60988: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:58.013 UTC [comm.grpc.server] 1 -> INFO 03d[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:57.999Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60988", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "13.3758ms"}
+[33m2018-12-19 08:13:58.177 UTC [common.deliver] Handle -> WARN 03e[0m Error reading from 172.18.0.3:60990: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:58.178 UTC [comm.grpc.server] 1 -> INFO 03f[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:58.17Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60990", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "7.0947ms"}
+[33m2018-12-19 08:13:58.731 UTC [common.deliver] Handle -> WARN 040[0m Error reading from 172.18.0.3:60992: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:58.732 UTC [comm.grpc.server] 1 -> INFO 041[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:58.719Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60992", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "12.8045ms"}
+[33m2018-12-19 08:13:58.920 UTC [common.deliver] Handle -> WARN 042[0m Error reading from 172.18.0.3:60994: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:58.921 UTC [comm.grpc.server] 1 -> INFO 043[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:58.898Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60994", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "23.3282ms"}
+[33m2018-12-19 08:13:59.097 UTC [common.deliver] Handle -> WARN 044[0m Error reading from 172.18.0.3:60996: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:59.098 UTC [comm.grpc.server] 1 -> INFO 045[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:59.085Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60996", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "12.4647ms"}
+[33m2018-12-19 08:13:59.332 UTC [common.deliver] Handle -> WARN 046[0m Error reading from 172.18.0.3:60998: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:59.332 UTC [comm.grpc.server] 1 -> INFO 047[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:59.317Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:60998", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "15.9587ms"}
+[33m2018-12-19 08:13:59.747 UTC [common.deliver] Handle -> WARN 048[0m Error reading from 172.18.0.3:32768: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:13:59.747 UTC [comm.grpc.server] 1 -> INFO 049[0m streaming call completed {"grpc.start_time": "2018-12-19T08:13:59.692Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32768", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "55.1541ms"}
+[33m2018-12-19 08:14:00.131 UTC [common.deliver] Handle -> WARN 04a[0m Error reading from 172.18.0.3:32770: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:00.131 UTC [comm.grpc.server] 1 -> INFO 04b[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:00.108Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32770", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "23.4406ms"}
+[33m2018-12-19 08:14:00.349 UTC [common.deliver] Handle -> WARN 04c[0m Error reading from 172.18.0.3:32772: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:00.350 UTC [comm.grpc.server] 1 -> INFO 04d[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:00.34Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32772", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "10.0703ms"}
+[33m2018-12-19 08:14:00.648 UTC [common.deliver] Handle -> WARN 04e[0m Error reading from 172.18.0.3:32774: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:00.649 UTC [comm.grpc.server] 1 -> INFO 04f[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:00.634Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32774", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "14.9414ms"}
+[33m2018-12-19 08:14:01.098 UTC [common.deliver] Handle -> WARN 050[0m Error reading from 172.18.0.3:32776: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:01.098 UTC [comm.grpc.server] 1 -> INFO 051[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:01.079Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32776", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "19.6551ms"}
+[33m2018-12-19 08:14:01.653 UTC [common.deliver] Handle -> WARN 052[0m Error reading from 172.18.0.3:32778: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:01.653 UTC [comm.grpc.server] 1 -> INFO 053[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:01.626Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32778", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "27.0192ms"}
+[33m2018-12-19 08:14:02.108 UTC [common.deliver] Handle -> WARN 054[0m Error reading from 172.18.0.3:32780: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:02.108 UTC [comm.grpc.server] 1 -> INFO 055[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:02.082Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32780", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "26.4043ms"}
+[33m2018-12-19 08:14:02.453 UTC [common.deliver] Handle -> WARN 056[0m Error reading from 172.18.0.3:32782: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:02.453 UTC [comm.grpc.server] 1 -> INFO 057[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:02.415Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32782", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "38.3231ms"}
+[33m2018-12-19 08:14:02.774 UTC [common.deliver] Handle -> WARN 058[0m Error reading from 172.18.0.3:32784: rpc error: code = Canceled desc = context canceled
+[34m2018-12-19 08:14:02.774 UTC [comm.grpc.server] 1 -> INFO 059[0m streaming call completed {"grpc.start_time": "2018-12-19T08:14:02.752Z", "grpc.service": "orderer.AtomicBroadcast", "grpc.method": "Deliver", "grpc.peer_address": "172.18.0.3:32784", "error": "rpc error: code = Canceled desc = context canceled", "grpc.code": "Canceled", "grpc.call_duration": "21.6929ms"}
